@@ -187,32 +187,129 @@ h3{
     text-align: center;
 }
 
-footer{
-    background-color: rgb(7, 1, 34);
-    
-}
-.footer{
-    display: flex;
-    padding: 23px 122px;
-    justify-content: space-evenly;
-    
-}
-.footer ul{
-    
-    list-style: none;
-    
- 
-}
-.footer .ul li{
-  
-        text-decoration: none;
-
-    
-}
-.footer > div{
-    width: 223px;
-}
-footer .footer-text{
-    align-items: center;
+/* Footer */
+footer {
+    background-color: rgb(13, 13, 68);
     color: lightgrey;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer h3 {
+    font-size: 1.8rem;
+    color: rgb(214, 134, 224);
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer ul li {
+    display: inline;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: rgb(214, 134, 224);
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: lightgrey;
+}
+
+.footer .social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer .social img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: rgb(13, 13, 68);
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(214, 134, 224);
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+}
+
+.contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: rgb(156, 93, 216);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: rgb(214, 134, 224);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(156, 93, 216, 0.5);
 }
