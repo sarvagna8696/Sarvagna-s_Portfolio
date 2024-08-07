@@ -144,94 +144,49 @@ h3{
     margin-bottom: 30px;
     color: #fff;
 }
-.skills{
-    .holder{
-        background-color: lightgray;
-        color:rgb(6, 1, 10);
-        border-radius: 30px;
-        padding: 30px;
-        display: flex;
-        @media(max-width:1024px){
-            flex-direction:column;
-        }
-        .leftcolumn{
-            flex:1;
-            ul{
-                  list-style-type: none;
-                  gap: 10px;
-                  margin-right: 100px;
-                margin-bottom: 20px;
-                li{
-                    display: inline;
-                    background-color: rgb(101, 31, 167);
-                    padding: 10px 20px;
-                    border-radius: 15px;
-                    margin-bottom: 15px;
-                    color: rgb(3, 3, 3);
-                }
-            }
-
-        }
-        .rightcolumn{
-            flex:1;
-            margin-bottom: 20px;
-            h3{
-                color: black;
-            }
-        }
-    }
-
+.skills {
+    padding: 50px 0;
 }
-.projects{
-    .atmgrid{
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,1fr);
-        @media(max-width:1024px){
-            grid-template-rows: repeat(4,1fr);
-        }
-        .atmitems{
-         
-            background-color: blueviolet;
-            border-radius: 15px;
-            &:nth-child(1){
-                grid-column: span 1;
-                grid-row: span 1;
-                @media(max-width:1024px){
-                    grid-column: span 1;
-                grid-row: span 1;
-                }
-            }
-            &:nth-child(2){
-                grid-column: span 1;
-                grid-row: span 1;
-                @media(max-width:1024px){
-                    grid-column: span 1;
-                grid-row: span 1;
-                }
-            }
-           
-            &:nth-child(3){
-                grid-column: span 1;
-                grid-row:span 1;
-                @media(max-width:1024px){
-                    grid-column: span 1;
-                grid-row: span 1;
-                }
 
-            } &:nth-child(4){
-                grid-column: span 1;
-                grid-row:span 1;
-                @media(max-width:800px){
-                    grid-column: span 1;
-                grid-row: span 1;
-                }
-
-            }
-        }
-    }
+.skills .holder {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    color: rgb(6, 1, 10);
+    border-radius: 30px;
+    padding: 30px;
 }
+
+.skills .leftcolumn ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills .leftcolumn ul li {
+    display: inline-block;
+    background-color: rgb(101, 31, 167);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 5px;
+    color: #fff;
+}
+.projects {
+    padding: 50px 0;
+}
+
+.projects .atmgrid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.projects .atmitems {
+    background-color: blueviolet;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
 footer{
     background-color: rgb(7, 1, 34);
     
